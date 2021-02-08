@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
+    <style>
+        div {
+            text-align: center;
+        }
+        h1{
+            font-family: 'Yusei Magic', sans-serif;
+            font-size: 40px;
+        }
+    </style>
+</head>
+
+<body>
+ {% if data == 0%}
+    <div>
+        <h1>No Emotion</h1>
+        <img src="https://media.giphy.com/media/U5DNSiHo21pvuJEXye/giphy.gif" alt="" height="500px" width="700px">
+    </div>
+{% elif data == 2%}
+    <div>
+        <h1>Disgust</h1>
+        <img src="https://media.giphy.com/media/MBfnmipP1NfTSKr2IE/giphy.gif" alt="" height="500px" width="700px">
+    </div>
+{% elif data == 6%}
+    <div>
+        <h1>Surprise</h1>
+        <img src="https://media.giphy.com/media/xUNda1aXN8zSrNartK/giphy.gif" alt="" height="500px" width="700px">
+    </div>
+    {% elif data == 5%}
+    <div>
+        <h1>Sadness</h1>
+        <img src="https://media.giphy.com/media/fvf8NXAI46OVYJMX9e/giphy.gif" alt="" height="500px" width="700px">
+    </div>
+    {% elif data == 3%}
+    <div>
+        <h1>Fear</h1> <br><br>
+        <img src="https://media.giphy.com/media/SYEYjCCkcJSgjo6Svv/giphy.gif" alt="" height="500px" width="700px">
+    </div>
+    {% elif data == 4%}
+    <div>
+        <h1>Happiness</h1><br><br>
+        <img src="https://media.giphy.com/media/icIr8rk03xQI6NS67S/giphy.gif" alt="" height="500px" width="700px">
+    </div>
+    {% elif data == 1%}
+    <div>
+        <h1>Anger</h1>
+        <img src="https://media.giphy.com/media/MBfnmipP1NfTSKr2IE/giphy.gif" alt="" height="500px" width="700px">
+    </div>
+    {% endif %}
+
+</body>
+
+</html>
